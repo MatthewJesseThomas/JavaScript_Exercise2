@@ -158,3 +158,70 @@
 
 // })
 // ===========================================================================
+// Reduce-(To get the sum of an Array) //
+// let numbers = [1, 2, 3, 4, 5];
+// let sum = numbers.reduce((a, b)=>{
+//     return a + b;
+//     // return a * b;
+// })
+// console.log(`Sum Of: ${sum}`);
+// ===========================================================================
+// Mapping //
+// let numbers = [1, 2, 3, 4, 5];
+// let double = numbers.map((item)=> {
+//     return item*2;
+// })
+// console.log('Current Array: ', numbers);
+// console.log('Double: ', double);
+// Make Use of For-Of //
+// let numbers = [1, 2, 3, 4, 5];
+//     for(let numb of numbers) {
+//         console.log(numb);
+// }
+// Make Use of new object within an array //
+// let numbers = [1, 2, 3, 4, 5];
+// let villains = [
+//     {
+//         id: "0123456789",
+//         firstName: 'Victor',
+//         surName: 'Von Doom'
+
+//     },
+//     {
+//         id: "01234567810",
+//         firstName: 'Norman',
+//         surName: 'Osborn'
+
+//     }
+// ];
+// console.table(villains);
+// 
+// let peopleFirstNames = villains.map((item)=>{
+//     return item.firstName;
+// })
+// console.log(peopleFirstNames)
+// ===========================================================================
+// Hoisting-(Ability to call a function before declaring it.)//
+// function addition(a, b) {
+//     console.log(a + b);
+// }
+// addition(5, 6);
+// ===========================================================================
+// Rest Operator- Allows for unlimited No. of Arguments //
+// function addition(...reich) {
+//     let sum = reich.reduce((a,b)=>{
+//         return a + b;
+//     }) 
+//     console.log(sum);
+    // console.log(reich);
+// }
+// addition(1, 2, 3);
+// Example# //
+// function additionOf(...reich) {
+//     let sum = reich.filter(Number).reduce((a, b)=>{
+//         return a + b;
+//     })
+//     console.log(sum);
+// }
+// additionOf(7, 8, 5, 'Matt');
+// ===========================================================================
